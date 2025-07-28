@@ -4,14 +4,13 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.418</version>
+    <version>5.17</version>
   </parent>
   
   <artifactId>cygpath</artifactId>
   <version>1.6-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <name>Jenkins Cygpath plugin</name>
-  <description>Performs path conversion with cygpath</description>
   <url>http://wiki.jenkins-ci.org/display/JENKINS/Cygpath+Plugin</url>
   <developers>
     <developer>

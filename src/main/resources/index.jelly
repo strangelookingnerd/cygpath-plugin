@@ -1,3 +1,4 @@
+<?jelly escape-by-default='true'?>
 <div>
   This plugin performs Cygpath path conversion on Windows slaves so that
   the path of tools in the cluster remains the consistent across platforms. 

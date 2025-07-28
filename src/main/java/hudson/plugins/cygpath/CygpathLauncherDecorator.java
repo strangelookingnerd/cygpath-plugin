@@ -32,6 +32,8 @@ import hudson.model.Node;
 import hudson.remoting.Channel;
 import hudson.remoting.VirtualChannel;
 import hudson.remoting.Callable;
+import org.jenkinsci.remoting.Role;
+import org.jenkinsci.remoting.RoleChecker;
 import hudson.util.jna.JnaException;
 import hudson.util.jna.RegistryKey;
 
@@ -139,6 +141,10 @@ public class CygpathLauncherDecorator extends LauncherDecorator {
 
         public String call() throws IOException {
             return new File(getCygwinRoot(),"bin\\cygpath").getPath();
+        }
+
+        public void checkRoles(RoleChecker checker) throws SecurityException{
+            checker.check(this, Role.UNKNOWN);
         }
     }
 }
